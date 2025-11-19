@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Tic</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            padding-top: 100px;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            background-color: #A6AEBF;
+            border-radius: 10px;
+            margin: 1px;
+        }
+
+        .para-container{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+            
+        }
+        .para{
+            border: 2px solid black;
+            padding: 15px;
+            text-transform: uppercase;
+            border-radius: 10px;
+            background-color: #9EDF9C;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="0" class="col" onclick="handler(this)"></div>
+            <div id="1" class="col" onclick="handler(this)"></div>
+            <div id="2" class="col" onclick="handler(this)"></div>
+        </div>
+        <div class="row">
+            <div id="3" class="col" onclick="handler(this)"></div>
+            <div id="4" class="col" onclick="handler(this)"></div>
+            <div id="5" class="col" onclick="handler(this)"></div>
+        </div>
+        <div class="row">
+            <div id="6" class="col" onclick="handler(this)"></div>
+            <div id="7" class="col" onclick="handler(this)"></div>
+            <div id="8" class="col" onclick="handler(this)"></div>
+        </div>
+
+    <div class="para-container">
+        <span class="para"></span>
+    </div>
+
+    </div>
+     
+    
+    
+
+    <script src="tic.js"></script>
+</body>
+</html>

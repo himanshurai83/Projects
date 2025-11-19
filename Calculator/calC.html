@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using HTML CSS & JS</title>
+    <link rel="stylesheet" href="calC.css">
+</head>
+<body>
+
+    <div id="main-box">
+
+    <input type="text" id="display" readonly>
+
+    <div id="buttons">
+        <button onclick="append('+')" id="special">+</button>        
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('-')" id="special">-</button>
+        
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('*')" id="special">*</button>
+    
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('/')" id="special">/</button>
+        <button onclick="append('0')">0</button>
+        <button onclick="back()">X</button>
+        <button onclick="clearScreen()">C</button>       
+        <button onclick="calculate()" id="total">=</button>
+        
+    </div>
+
+</div>
+
+<script src="calC.js"></script>
+</body>
+</html>

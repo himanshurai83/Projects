@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clock{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digital-heading{
+    font-size: 6.2rem;
+    background-color:mediumslateblue;
+    padding: 3rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+
+img{
+    background-color: mediumslateblue;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 20px;
+}
+#stop-btn{
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    background-color:crimson;
+    font-size: 1.5rem;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#stop-btn:hover{
+    background-color: limegreen;;
+    scale: 1.12;
+    box-shadow: 5px 10px 20px black,
+                5px 10px 20px green;
+  
+}
+
+.timer{
+    text-align: center;
+    margin-top: 20px;
+}
+#running{
+    background-color:rgb(29, 185, 185);
+    display: inline-block;
+    padding: 1.2rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.btn-2{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+#start-timer,#set-timer{
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    background-color:limegreen;
+    font-size: 1.2rem;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#start-timer:hover,#set-timer:hover{
+    background-color: #ff0033;
+    scale: 1.12;
+    box-shadow: 5px 10px 20px black,
+                5px 10px 20px red;
+  
+}
+
+.msg{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+#msg{
+    display: inline-block;
+    padding: 1rem;
+    background-color: darkred;
+    color:#fff;
+    border-radius: 10px;
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    .clock > img {
+        height: 133px;
+    }
+    #digital-heading{
+        font-size: 2rem;
+    }
+}
